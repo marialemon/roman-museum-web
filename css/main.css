@@ -4,22 +4,22 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
-  font-size: 16px;
+  
 
-  outline: thin solid red;
 }
 
 :root {
   font-family: "Raleway", "Helvetica", sans-serif;
+  font-size: 14px;
 }
 
 h1 {
   display: none;
 }
 
-header {
-  background-color: beige;
-  padding: 1.5rem;
+.header, .main {
+
+  padding: 2rem;
 }
 
 .main-nav {
@@ -28,11 +28,26 @@ header {
   flex-flow: row wrap;
 }
 
-.main-nav .left-nav-links,
-.right-nav-links {
+.main-nav .left-menu,
+.right-menu {
   text-transform: uppercase;
 
   display: flex;
   flex-flow: row wrap;
   gap: 2rem;
+}
+
+.nav-link{
+  color: #141414;
+  font-weight: 800;
+}
+
+.main-p{
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.footer{
+  background-color: #E8E8E8;
+  padding: 2rem;
 }
