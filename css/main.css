@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 16px;
+
+  outline: thin solid red;
+}
+
+:root {
+  font-family: "Raleway", "Helvetica", sans-serif;
+}
+
+h1 {
+  display: none;
+}
+
+header {
+  background-color: beige;
+  padding: 1.5rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.main-nav .left-nav-links,
+.right-nav-links {
+  text-transform: uppercase;
+
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+}
