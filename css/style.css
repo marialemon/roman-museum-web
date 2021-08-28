@@ -8,11 +8,25 @@
 
 :root {
   font-family: "Raleway", "Helvetica", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 h1 {
   display: none;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.p {
+  line-height: 1.4rem;
+  margin: 1rem 0;
+}
+
+section {
+  margin: 5rem 0;
 }
 
 .header,
@@ -44,9 +58,9 @@ h1 {
 
 .nav-link {
   color: #141414;
+  font-size: 14px;
   font-weight: 800;
 }
-
 
 .hero {
   display: flex;
@@ -82,6 +96,32 @@ h1 {
 .main-p {
   font-size: 64px;
   font-weight: 500;
+}
+
+.history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "img info-wrapper"
+    "p p";
+}
+
+.museum-photo-1 {
+  background: url("../images/12011050dfr-web.jpg") no-repeat center;
+  width: 529px;
+  height: 498px;
+  grid-area: img;
+}
+
+.info-wrapper {
+  grid-area: info-wrapper;
+}
+
+.history > .p {
+  grid-area: p;
+  width: 50%;
+  justify-self: center;
+  margin-top: 5rem;
 }
 
 .footer {
