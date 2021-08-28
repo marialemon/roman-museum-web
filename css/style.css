@@ -25,10 +25,6 @@ h2 {
   margin: 1rem 0;
 }
 
-section {
-  margin: 5rem 0;
-}
-
 .header,
 .main {
   padding: 2rem 3rem;
@@ -93,6 +89,13 @@ section {
   left: 20%;
 }
 
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 7rem;
+}
+
 .main-p {
   font-size: 64px;
   font-weight: 500;
@@ -106,14 +109,15 @@ section {
     "p p";
 }
 
-.museum-photo-1 {
+.history .museum-photo-1 {
   background: url("../images/12011050dfr-web.jpg") no-repeat center;
+  background-size: cover;
   width: 529px;
   height: 498px;
   grid-area: img;
 }
 
-.info-wrapper {
+.history .info-wrapper {
   grid-area: info-wrapper;
 }
 
@@ -124,7 +128,35 @@ section {
   margin-top: 5rem;
 }
 
+.forum-district {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.forum-district .info-wrapper {
+  width: 50%;
+}
+
+.museum-photo-2 {
+  background: url("../images/03312074dfr.jpg") no-repeat center;
+  background-size: cover;
+  width: 529px;
+  height: 498px;
+}
+
+.enhancement {
+  max-width: 768px;
+}
+
+.enhancement h2 {
+  text-align: center;
+}
+
 .footer {
   background-color: #e8e8e8;
   padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
