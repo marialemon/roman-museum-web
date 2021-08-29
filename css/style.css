@@ -50,6 +50,7 @@ h2 {
   display: flex;
   flex-flow: row wrap;
   gap: 6rem;
+  align-items: center;
 }
 
 .nav-link {
@@ -99,6 +100,8 @@ h2 {
 .main-p {
   font-size: 64px;
   font-weight: 500;
+
+  margin-top: 4rem;
 }
 
 .history {
@@ -117,7 +120,7 @@ h2 {
   grid-area: img;
 }
 
-.history .info-wrapper {
+.history .info-wrapper-history {
   grid-area: info-wrapper;
 }
 
@@ -128,13 +131,13 @@ h2 {
   margin-top: 5rem;
 }
 
-.forum-district {
+section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
-.forum-district .info-wrapper {
+.info-wrapper {
   width: 50%;
 }
 
@@ -142,7 +145,48 @@ h2 {
   background: url("../images/03312074dfr.jpg") no-repeat center;
   background-size: cover;
   width: 529px;
-  height: 498px;
+  height: 576px;
+}
+
+.museum-photo-3 {
+  background: url("../images/03312108dfr-web.jpg") no-repeat bottom;
+  background-size: cover;
+  width: 550px;
+  height: 400px;
+}
+
+.museum-photo-4 {
+  background: url("../images/03312092dfr-web.jpg") no-repeat center;
+  background-size: cover;
+  width: 550px;
+  height: 400px;
+}
+
+.thermal-baths,
+.atrium-building {
+  max-width: 1200px;
+}
+
+.info-wrapper-isis {
+  width: 40%;
+}
+
+.museum-photo-5 {
+  background: url("../images/santuario-isis.jpg") no-repeat bottom;
+  background-size: cover;
+  width: 700px;
+  height: 384px;
+}
+
+.info-wrapper-decumanum {
+  width: 60%;
+}
+
+.museum-photo-6 {
+  background: url("../images/03312096dfr-web.jpg") no-repeat bottom;
+  background-size: cover;
+  width: 400px;
+  height: 289px;
 }
 
 .enhancement {
@@ -156,6 +200,7 @@ h2 {
 .footer {
   background-color: #e8e8e8;
   padding: 2rem;
+  margin-top: 5rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
