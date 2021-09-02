@@ -20,18 +20,20 @@ h2 {
   font-weight: 500;
 }
 
+h3 {
+  font-size: 24px;
+  margin-bottom: 0.7rem;
+}
+
 .p {
   line-height: 1.4rem;
   margin: 1rem 0;
 }
 
 .header,
-.main {
+.main,
+.visit {
   padding: 2rem 3rem;
-}
-
-.header {
-  height: 100vh;
 }
 
 .main-nav {
@@ -65,7 +67,7 @@ h2 {
   align-items: flex-end;
   justify-content: space-between;
 
-  height: 88vh;
+  height: 85vh;
 }
 
 .hero-img-1 {
@@ -104,7 +106,7 @@ h2 {
   margin-top: 4rem;
 }
 
-.history {
+.main .history {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -112,7 +114,7 @@ h2 {
     "p p";
 }
 
-.history .museum-photo-1 {
+.main .history .museum-photo-1 {
   background: url("../images/12011050dfr-web.jpg") no-repeat center;
   background-size: cover;
   width: 529px;
@@ -120,18 +122,18 @@ h2 {
   grid-area: img;
 }
 
-.history .info-wrapper-history {
+.main .history .info-wrapper-history {
   grid-area: info-wrapper;
 }
 
-.history > .p {
+.main .history > .p {
   grid-area: p;
   width: 50%;
   justify-self: center;
   margin-top: 5rem;
 }
 
-section {
+.main section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -204,4 +206,62 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+}
+
+.footer .rrss-nav {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+}
+
+.footer p,
+li {
+  line-height: 1.5rem;
+}
+
+.footer a {
+  color: #141414;
+  text-decoration: underline;
+}
+
+/* VISIT */
+
+.visit {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 5rem;
+}
+
+.visit .hero-buttons {
+  height: 60vh;
+  margin-bottom: 3rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.visit .hero-buttons button {
+  background-color: #141414;
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1rem 1.2rem;
+}
+
+.visit section,
+.visit .info-wrapper-tour {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1.6rem;
+}
+
+.visit section p {
+  line-height: 1.5rem;
+}
+
+.visit .museum-tour {
+  display: flex;
 }
